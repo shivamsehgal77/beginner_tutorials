@@ -17,7 +17,10 @@ rosdep install -i --from-path src --rosdistro humble -y
 # Build the package using colcon build
 colcon build --packages-select cpp_pubsub
 # After successfull build source the package
-. install/setup.bash
+. install/setup.bash 
+```
+## Run Publisher and Talker
+```bash
 # Run the publisher in terminal#1
 ros2 run beginner_tutorials talker
 # Run the subscriber in terminal#2 (Split the terminal and source ROS2 and the workspace setup.bash)
