@@ -17,8 +17,10 @@
 #include <memory>
 #include <string>
 
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/static_transform_broadcaster.h"
 #include "cpp_pubsub/srv/modify_message.hpp"
-#include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
 using namespace std::chrono_literals;
@@ -43,6 +45,8 @@ class MinimalPublisher : public rclcpp::Node {
         "modify_message",
         std::bind(&MinimalPublisher::modifyMessageCallback, this, _1, _2));
 
+    tf_static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+
     // Use DEBUG logging level
     RCLCPP_DEBUG_STREAM(this->get_logger(), "Debug message in constructor");
 
@@ -58,6 +62,9 @@ class MinimalPublisher : public rclcpp::Node {
     // Use FATAL logging level
     RCLCPP_FATAL_STREAM(this->get_logger(),
                         "Fatal error message in constructor");
+    
+    // Publish static transforms once at startup
+    this->make_transforms();
   }
 
  private:
@@ -96,9 +103,31 @@ class MinimalPublisher : public rclcpp::Node {
     return true;
   }
 
+  void make_transforms()
+  {
+    geometry_msgs::msg::TransformStamped t;
+
+    t.header.stamp = this->get_clock()->now();
+    t.header.frame_id = "world";
+    t.child_frame_id = "talk";
+
+    t.transform.translation.x = 1;
+    t.transform.translation.y = 0;
+    t.transform.translation.z = 1;
+    tf2::Quaternion q;
+    q.setRPY(0,0,4);
+    t.transform.rotation.x = q.x();
+    t.transform.rotation.y = q.y();
+    t.transform.rotation.z = q.z();
+    t.transform.rotation.w = q.w();
+
+    tf_static_broadcaster_->sendTransform(t);
+  }
+
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
   rclcpp::Service<cpp_pubsub::srv::ModifyMessage>::SharedPtr service_;
+  std::shared_ptr<tf2_ros::StaticTransformBroadcaster> tf_static_broadcaster_;
   size_t count_;
 };
 
