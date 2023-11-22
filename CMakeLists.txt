@@ -16,6 +16,16 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ModifyMessage.srv"
 )
 
+set(THIS_PACKAGE_INCLUDE_DEPENDS
+    rclcpp
+    rclcpp_action
+    std_msgs
+)
+
+foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
+  find_package(${Dependency} REQUIRED)
+endforeach()
+
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
@@ -43,6 +53,29 @@ install(DIRECTORY
   launch
   DESTINATION share/${PROJECT_NAME}
 )
-  
+
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_lint_auto REQUIRED)
+
+  # the following lines skip linters
+  set(ament_cmake_cppcheck_FOUND TRUE)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  set(ament_cmake_flake8_FOUND TRUE)
+  set(ament_cmake_uncrustify_FOUND TRUE)
+  set(ament_cmake_xmllint_FOUND TRUE)
+  # ament_lint_auto_find_test_dependencies()
+
+  # Run all lint tests in package.xml except those listed above
+  ament_lint_auto_find_test_dependencies()
+
+  # Add a gtest executable
+  set(TESTFILES
+    test/integration_tests.cpp)
+  ament_add_gtest(${PROJECT_NAME}_tests ${TESTFILES})
+  ament_target_dependencies(${PROJECT_NAME}_tests ${THIS_PACKAGE_INCLUDE_DEPENDS})
+endif()
 rosidl_target_interfaces(talker ${PROJECT_NAME} "rosidl_typesupport_cpp")
+ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()

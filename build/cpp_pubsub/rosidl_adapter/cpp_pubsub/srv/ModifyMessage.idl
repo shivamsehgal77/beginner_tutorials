@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cpp_pubsub/srv/ModifyMessage.srv
+// generated code does not contain a copyright notice
+
+
+module cpp_pubsub {
+  module srv {
+    struct ModifyMessage_Request {
+      string new_message;
+    };
+    struct ModifyMessage_Response {
+      boolean success;
+    };
+  };
+};

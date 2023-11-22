@@ -1,0 +1,6 @@
+{
+  "package_name": "cpp_pubsub",
+  "non_idl_tuples": [
+    "/home/shivam/ros2_ws/src/cpp_pubsub:srv/ModifyMessage.srv"
+  ]
+}

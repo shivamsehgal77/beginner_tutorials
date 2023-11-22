@@ -1,0 +1,80 @@
+[0.204s] Invoking command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/shivam/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub
+[0.489s] -- The C compiler identification is GNU 11.4.0
+[0.764s] -- The CXX compiler identification is GNU 11.4.0
+[0.800s] -- Detecting C compiler ABI info
+[1.012s] -- Detecting C compiler ABI info - done
+[1.041s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.043s] -- Detecting C compile features
+[1.045s] -- Detecting C compile features - done
+[1.061s] -- Detecting CXX compiler ABI info
+[1.303s] -- Detecting CXX compiler ABI info - done
+[1.333s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.334s] -- Detecting CXX compile features
+[1.337s] -- Detecting CXX compile features - done
+[1.349s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.356s] -- Found ament_cmake_core: 1.3.5 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[1.884s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.138s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.184s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.541s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.473s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.007s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.752s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.762s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.845s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.845s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.845s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.846s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.904s] -- Found PythonExtra: .so  
+[5.023s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[5.380s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.395s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.739s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.830s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.966s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.016s] -- Looking for pthread.h
+[6.210s] -- Looking for pthread.h - found
+[6.210s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.379s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.383s] -- Found Threads: TRUE  
+[6.983s] -- Found rclcpp_action: 16.0.6 (/opt/ros/humble/share/rclcpp_action/cmake)
+[7.395s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.580s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[7.647s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[8.500s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.558s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.581s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[8.581s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[8.581s]   rosidl_target_interfaces()
+[8.581s] Call Stack (most recent call first):
+[8.582s]   CMakeLists.txt:80 (rosidl_target_interfaces)
+[8.582s] 
+[8.582s] [0m
+[8.626s] -- Added test 'lint_cmake' to check CMake code style
+[8.634s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.647s] -- Configuring done
+[8.811s] -- Generating done
+[8.823s] -- Build files have been written to: /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub
+[8.867s] Invoked command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/shivam/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub
+[8.868s] Invoking command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub -- -j4 -l4
+[9.008s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[9.918s] [  2%] Built target cpp_pubsub__cpp
+[9.978s] [  4%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[35.986s] [  7%] [32m[1mLinking CXX executable listener[0m
+[37.190s] [  7%] Built target listener
+[37.255s] [  9%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[39.337s] [ 12%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[39.431s] [ 12%] Built target gtest_main
+[39.485s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[49.035s] [ 17%] [32m[1mLinking CXX static library libgtest.a[0m
+[49.197s] [ 17%] Built target gtest
+[49.237s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[50.310s] [ 21%] [32mBuilding CXX object CMakeFiles/cpp_pubsub__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_pubsub/srv/modify_message__type_support.cpp.o[0m
+[50.995s] [ 24%] [32m[1mLinking CXX shared library libcpp_pubsub__rosidl_typesupport_cpp.so[0m
+[51.089s] [ 24%] Built target cpp_pubsub__rosidl_typesupport_cpp
+[51.114s] [ 26%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[51.897s] [ 29%] [32mBuilding CXX object CMakeFiles/cpp_pubsub__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_pubsub/srv/detail/dds_fastrtps/modify_message__type_support.cpp.o[0m
+[52.962s] [ 31%] [32m[1mLinking CXX shared library libcpp_pubsub__rosidl_typesupport_fastrtps_cpp.so[0m
+[53.158s] [ 31%] Built target cpp_pubsub__rosidl_typesupport_fastrtps_cpp
+[53.185s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m

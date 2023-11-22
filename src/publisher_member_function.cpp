@@ -12,16 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include <chrono>
-#include <functional>
-#include <memory>
-#include <string>
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2_ros/static_transform_broadcaster.h>
 
-#include "geometry_msgs/msg/transform_stamped.hpp"
-#include "tf2/LinearMath/Quaternion.h"
-#include "tf2_ros/static_transform_broadcaster.h"
-#include "cpp_pubsub/srv/modify_message.hpp"
-#include "std_msgs/msg/string.hpp"
+#include <chrono>
+#include <cpp_pubsub/srv/modify_message.hpp>
+#include <functional>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+#include <memory>
+#include <std_msgs/msg/string.hpp>
+#include <string>
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -45,7 +45,8 @@ class MinimalPublisher : public rclcpp::Node {
         "modify_message",
         std::bind(&MinimalPublisher::modifyMessageCallback, this, _1, _2));
 
-    tf_static_broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+    tf_static_broadcaster_ =
+        std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
 
     // Use DEBUG logging level
     RCLCPP_DEBUG_STREAM(this->get_logger(), "Debug message in constructor");
@@ -62,7 +63,7 @@ class MinimalPublisher : public rclcpp::Node {
     // Use FATAL logging level
     RCLCPP_FATAL_STREAM(this->get_logger(),
                         "Fatal error message in constructor");
-    
+
     // Publish static transforms once at startup
     this->make_transforms();
   }
@@ -103,8 +104,7 @@ class MinimalPublisher : public rclcpp::Node {
     return true;
   }
 
-  void make_transforms()
-  {
+  void make_transforms() {
     geometry_msgs::msg::TransformStamped t;
 
     t.header.stamp = this->get_clock()->now();
@@ -115,7 +115,7 @@ class MinimalPublisher : public rclcpp::Node {
     t.transform.translation.y = 0;
     t.transform.translation.z = 1;
     tf2::Quaternion q;
-    q.setRPY(0,0,4);
+    q.setRPY(0, 0, 4);
     t.transform.rotation.x = q.x();
     t.transform.rotation.y = q.y();
     t.transform.rotation.z = q.z();
