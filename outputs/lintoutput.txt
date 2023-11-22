@@ -1,5 +1,3 @@
-./src/publisher_member_function.cpp:15:  <chrono> is an unapproved C++11 header.  [build/c++11] [5]
-./src/publisher_member_function.cpp:24:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
 Done processing ./src/publisher_member_function.cpp
 Done processing ./src/subscriber_member_function.cpp
-Total errors found: 2
+Done processing ./test/integration_tests.cpp

@@ -1,0 +1,243 @@
+[0.214s] Invoking command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub -- -j4 -l4
+[0.318s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.318s] -- Found ament_cmake_core: 1.3.5 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[0.778s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.791s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.648s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.179s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.852s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.929s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.999s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.999s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.999s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.043s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[3.263s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.268s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.603s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.030s] -- Found rclcpp_action: 16.0.6 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.294s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.394s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[4.416s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.983s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.989s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.998s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[4.998s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[4.998s]   rosidl_target_interfaces()
+[4.998s] Call Stack (most recent call first):
+[4.999s]   CMakeLists.txt:79 (rosidl_target_interfaces)
+[4.999s] 
+[4.999s] [0m
+[5.044s] -- Added test 'lint_cmake' to check CMake code style
+[5.055s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.073s] -- Configuring done
+[5.268s] -- Generating done
+[5.282s] -- Build files have been written to: /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub
+[5.383s] [  2%] Built target cpp_pubsub__cpp
+[5.410s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[5.454s] [  7%] Built target listener
+[5.482s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[5.508s] [ 12%] Built target gtest_main
+[5.531s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[5.564s] [ 17%] Built target gtest
+[5.587s] [35m[1mConsolidate compiler generated dependencies of target cpp_pubsub__rosidl_typesupport_cpp[0m
+[5.621s] [ 24%] Built target cpp_pubsub__rosidl_typesupport_cpp
+[5.645s] [35m[1mConsolidate compiler generated dependencies of target cpp_pubsub__rosidl_typesupport_fastrtps_cpp[0m
+[5.685s] [ 31%] Built target cpp_pubsub__rosidl_typesupport_fastrtps_cpp
+[5.724s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.644s] [ 36%] [32mBuilding CXX object CMakeFiles/cpp_pubsub__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_pubsub/srv/detail/modify_message__type_support.cpp.o[0m
+[7.837s] [ 39%] [32m[1mLinking CXX shared library libcpp_pubsub__rosidl_typesupport_introspection_cpp.so[0m
+[8.004s] [ 39%] Built target cpp_pubsub__rosidl_typesupport_introspection_cpp
+[8.046s] [ 41%] [32mBuilding CXX object CMakeFiles/cpp_pubsub_tests.dir/test/integration_tests.cpp.o[0m
+[32.345s] [ 43%] [32m[1mLinking CXX executable cpp_pubsub_tests[0m
+[33.788s] [ 43%] Built target cpp_pubsub_tests
+[33.868s] [ 43%] Built target ament_cmake_python_copy_cpp_pubsub
+[33.888s] [ 46%] [34m[1mGenerating C code for ROS interfaces[0m
+[34.811s] [ 48%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_generator_c.dir/rosidl_generator_c/cpp_pubsub/srv/detail/modify_message__functions.c.o[0m
+[34.969s] [ 51%] [32m[1mLinking C shared library libcpp_pubsub__rosidl_generator_c.so[0m
+[35.071s] [ 51%] Built target cpp_pubsub__rosidl_generator_c
+[35.857s] running egg_info
+[35.859s] creating cpp_pubsub.egg-info
+[35.860s] writing cpp_pubsub.egg-info/PKG-INFO
+[35.860s] writing dependency_links to cpp_pubsub.egg-info/dependency_links.txt
+[35.861s] writing top-level names to cpp_pubsub.egg-info/top_level.txt
+[35.861s] writing manifest file 'cpp_pubsub.egg-info/SOURCES.txt'
+[35.866s] reading manifest file 'cpp_pubsub.egg-info/SOURCES.txt'
+[35.869s] writing manifest file 'cpp_pubsub.egg-info/SOURCES.txt'
+[35.949s] [ 51%] Built target ament_cmake_python_build_cpp_pubsub_egg
+[35.968s] [ 53%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[36.745s] [ 56%] [32mBuilding CXX object CMakeFiles/cpp_pubsub__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_pubsub/srv/modify_message__type_support.cpp.o[0m
+[36.839s] [ 58%] [32m[1mLinking CXX shared library libcpp_pubsub__rosidl_typesupport_c.so[0m
+[36.934s] [ 58%] Built target cpp_pubsub__rosidl_typesupport_c
+[36.955s] [ 60%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[37.773s] [ 63%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_pubsub/srv/detail/modify_message__type_support.c.o[0m
+[37.877s] [ 65%] [32m[1mLinking C shared library libcpp_pubsub__rosidl_typesupport_introspection_c.so[0m
+[37.931s] [ 65%] Built target cpp_pubsub__rosidl_typesupport_introspection_c
+[37.950s] [ 68%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[38.674s] [ 70%] [32mBuilding CXX object CMakeFiles/cpp_pubsub__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_pubsub/srv/detail/modify_message__type_support_c.cpp.o[0m
+[39.560s] [ 73%] [32m[1mLinking CXX shared library libcpp_pubsub__rosidl_typesupport_fastrtps_c.so[0m
+[39.754s] [ 73%] Built target cpp_pubsub__rosidl_typesupport_fastrtps_c
+[39.797s] [ 73%] Built target cpp_pubsub
+[39.848s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[40.959s] [ 75%] Built target cpp_pubsub__py
+[41.002s] [ 78%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[55.836s] [ 80%] [32m[1mLinking CXX executable talker[0m
+[56.731s] [ 80%] Built target talker
+[56.775s] [ 82%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_generator_py.dir/rosidl_generator_py/cpp_pubsub/srv/_modify_message_s.c.o[0m
+[57.127s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/cpp_pubsub/libcpp_pubsub__rosidl_generator_py.so[0m
+[57.219s] [ 85%] Built target cpp_pubsub__rosidl_generator_py
+[57.264s] [ 87%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[57.515s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[57.586s] [ 90%] Built target cpp_pubsub__rosidl_typesupport_fastrtps_c__pyext
+[57.634s] [ 92%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_c.c.o[0m
+[57.851s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[57.920s] [ 95%] Built target cpp_pubsub__rosidl_typesupport_c__pyext
+[57.980s] [ 97%] [32mBuilding C object CMakeFiles/cpp_pubsub__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[58.232s] [100%] [32m[1mLinking C shared library rosidl_generator_py/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[58.317s] [100%] Built target cpp_pubsub__rosidl_typesupport_introspection_c__pyext
+[58.346s] Invoked command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub -- -j4 -l4
+[58.543s] Invoking command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub
+[58.558s] -- Install configuration: ""
+[58.561s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/ament_index/resource_index/rosidl_interfaces/cpp_pubsub
+[58.561s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.562s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.562s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.562s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__functions.h
+[58.565s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__struct.h
+[58.566s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__type_support.h
+[58.566s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__functions.c
+[58.566s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/modify_message.h
+[58.566s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg
+[58.567s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg/rosidl_generator_c__visibility_control.h
+[58.567s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/library_path.sh
+[58.567s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/library_path.dsv
+[58.567s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_generator_c.so
+[58.568s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_generator_c.so" to ""
+[58.568s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.569s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.569s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.569s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__rosidl_typesupport_fastrtps_c.h
+[58.569s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg
+[58.570s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[58.570s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_fastrtps_c.so
+[58.570s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_fastrtps_c.so" to ""
+[58.570s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.570s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.571s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.571s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__rosidl_typesupport_introspection_c.h
+[58.571s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__type_support.c
+[58.572s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg
+[58.578s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[58.579s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_introspection_c.so
+[58.579s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_introspection_c.so" to ""
+[58.579s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_c.so
+[58.579s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_c.so" to ""
+[58.580s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.580s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.580s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.581s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__struct.hpp
+[58.581s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__traits.hpp
+[58.581s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__builder.hpp
+[58.581s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/modify_message.hpp
+[58.581s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.582s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.582s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.582s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__rosidl_typesupport_fastrtps_cpp.hpp
+[58.582s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/dds_fastrtps
+[58.584s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg
+[58.584s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[58.586s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_fastrtps_cpp.so
+[58.587s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_fastrtps_cpp.so" to ""
+[58.587s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub
+[58.588s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv
+[58.588s] -- Up-to-date: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail
+[58.589s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__rosidl_typesupport_introspection_cpp.hpp
+[58.589s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/include/cpp_pubsub/cpp_pubsub/srv/detail/modify_message__type_support.cpp
+[58.590s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_introspection_cpp.so
+[58.590s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_introspection_cpp.so" to ""
+[58.591s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_cpp.so
+[58.592s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_typesupport_cpp.so" to ""
+[58.592s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/pythonpath.sh
+[58.593s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/pythonpath.dsv
+[58.593s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub-0.0.0-py3.10.egg-info
+[58.594s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub-0.0.0-py3.10.egg-info/top_level.txt
+[58.594s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub-0.0.0-py3.10.egg-info/PKG-INFO
+[58.595s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub-0.0.0-py3.10.egg-info/SOURCES.txt
+[58.595s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub-0.0.0-py3.10.egg-info/dependency_links.txt
+[58.596s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub
+[58.596s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv
+[58.596s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv/_modify_message.py
+[58.596s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv/__init__.py
+[58.598s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv/_modify_message_s.c
+[58.598s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[58.598s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_fastrtps_c.c
+[58.599s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/libcpp_pubsub__rosidl_generator_py.so
+[58.599s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/__init__.py
+[58.599s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_c.c
+[58.599s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[58.600s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/_cpp_pubsub_s.ep.rosidl_typesupport_introspection_c.c
+[58.600s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[58.707s] Listing '/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub'...
+[58.708s] Compiling '/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/__init__.py'...
+[58.708s] Listing '/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv'...
+[58.708s] Compiling '/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv/__init__.py'...
+[58.708s] Compiling '/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/srv/_modify_message.py'...
+[58.720s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[58.720s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[58.721s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[58.721s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[58.722s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[58.722s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/local/lib/python3.10/dist-packages/cpp_pubsub/cpp_pubsub_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[58.722s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_generator_py.so
+[58.723s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/libcpp_pubsub__rosidl_generator_py.so" to ""
+[58.723s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/srv/ModifyMessage.idl
+[58.724s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/srv/ModifyMessage.srv
+[58.724s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/srv/ModifyMessage_Request.msg
+[58.724s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/srv/ModifyMessage_Response.msg
+[58.724s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/cpp_pubsub/talker
+[58.727s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[58.728s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/cpp_pubsub/listener
+[58.736s] -- Set runtime path of "/home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[58.736s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/launch
+[58.736s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/launch/rosbag_launch.py
+[58.736s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/launch/cpp_pubsub_launch.py
+[58.738s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[58.740s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[58.740s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[58.741s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[58.741s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[58.741s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[58.742s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[58.742s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[58.742s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[58.742s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[58.743s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[58.743s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[58.744s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_generator_cExport.cmake
+[58.744s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_generator_cExport-noconfig.cmake
+[58.746s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_typesupport_fastrtps_cExport.cmake
+[58.748s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[58.749s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_introspection_cExport.cmake
+[58.750s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[58.751s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_cExport.cmake
+[58.752s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_cExport-noconfig.cmake
+[58.753s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_generator_cppExport.cmake
+[58.753s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_typesupport_fastrtps_cppExport.cmake
+[58.754s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[58.754s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_introspection_cppExport.cmake
+[58.755s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[58.756s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_cppExport.cmake
+[58.756s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsub__rosidl_typesupport_cppExport-noconfig.cmake
+[58.757s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_generator_pyExport.cmake
+[58.757s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/export_cpp_pubsub__rosidl_generator_pyExport-noconfig.cmake
+[58.758s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/rosidl_cmake-extras.cmake
+[58.758s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/ament_cmake_export_include_directories-extras.cmake
+[58.759s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/ament_cmake_export_libraries-extras.cmake
+[58.759s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/ament_cmake_export_targets-extras.cmake
+[58.760s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[58.760s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/ament_cmake_export_dependencies-extras.cmake
+[58.761s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[58.761s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[58.761s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[58.762s] -- Installing: /home/shivam/ros2_ws/src/cpp_pubsub/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[58.783s] Invoked command in '/home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/shivam/ros2_ws/src/cpp_pubsub/build/cpp_pubsub
