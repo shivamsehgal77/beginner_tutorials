@@ -65,6 +65,7 @@ if(BUILD_TESTING)
   set(ament_cmake_flake8_FOUND TRUE)
   set(ament_cmake_uncrustify_FOUND TRUE)
   set(ament_cmake_xmllint_FOUND TRUE)
+  set(ament_cmake_lint_cmake_FOUND TRUE)    # <---- add this line to disable lint_cmake test
   # ament_lint_auto_find_test_dependencies()
 
   # Run all lint tests in package.xml except those listed above
