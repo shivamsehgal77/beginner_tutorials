@@ -11,6 +11,16 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+/**
+ * @file publisher_member_function.cpp
+ * @author ssehgal7@umd.edu
+ * @brief 
+ * @version 0.1
+ * @date 2023-11-29
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_ros/static_transform_broadcaster.h>
@@ -29,6 +39,10 @@ using std::placeholders::_2;
 /* This example creates a subclass of Node and uses std::bind() to register a
  * member function as a callback from the timer. */
 
+/**
+ * @brief Minimal Publisher class
+ * 
+ */
 class MinimalPublisher : public rclcpp::Node {
  public:
   MinimalPublisher() : Node("minimal_publisher"), count_(0) {
@@ -69,12 +83,24 @@ class MinimalPublisher : public rclcpp::Node {
   }
 
  private:
+ /**
+  * @brief get the message from the topic
+  * 
+  */
   void timer_callback() {
     auto message = std_msgs::msg::String();
     message.data = "Hi, I am Shivam Sehgal! " + std::to_string(count_++);
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
     publisher_->publish(message);
   }
+  /**
+   * @brief Calling service to modify message
+   * 
+   * @param request 
+   * @param response 
+   * @return true 
+   * @return false 
+   */
 
   bool modifyMessageCallback(
       const std::shared_ptr<cpp_pubsub::srv::ModifyMessage::Request> request,
@@ -103,7 +129,10 @@ class MinimalPublisher : public rclcpp::Node {
     response->success = true;
     return true;
   }
-
+  /**
+   * @brief Make trandform function
+   * 
+   */
   void make_transforms() {
     geometry_msgs::msg::TransformStamped t;
 

@@ -38,7 +38,10 @@ class TaskPlanningFixture : public testing::Test {
   TaskPlanningFixture() : node_(std::make_shared<rclcpp::Node>("basic_test")) {
     RCLCPP_INFO_STREAM(node_->get_logger(), "DONE WITH CONSTRUCTOR!!");
   }
-
+/**
+ * @brief Set the Up object
+ * 
+ */
   void SetUp() override {
     // Setup things that should occur before every test instance should go here
 
@@ -48,7 +51,10 @@ class TaskPlanningFixture : public testing::Test {
 
     RCLCPP_INFO_STREAM(node_->get_logger(), "DONE WITH SETUP!!");
   }
-
+/**
+ * @brief Tear Down to stop the node
+ * 
+ */
   void TearDown() override {
     // Tear things that should occur after every test instance should go here
 
@@ -64,7 +70,15 @@ class TaskPlanningFixture : public testing::Test {
   std::stringstream cmd_ss, cmdInfo_ss, killCmd_ss;
 
   static constexpr int kExecNameMaxLen = 15;  // Maximum length for execName
-
+/**
+ * @brief 
+ * 
+ * @param pkg_name 
+ * @param node_name 
+ * @param exec_name 
+ * @return true 
+ * @return false 
+ */
   bool StartROSExec(const char* pkg_name, const char* node_name,
                     const char* exec_name) {
     // Build command strings
@@ -89,7 +103,12 @@ class TaskPlanningFixture : public testing::Test {
     }
     return true;
   }
-
+/**
+ * @brief 
+ * 
+ * @return true 
+ * @return false 
+ */
   bool StopROSExec() {
     if (killCmd_ss.str().empty()) return true;
 
@@ -97,7 +116,10 @@ class TaskPlanningFixture : public testing::Test {
     return retVal == 0;
   }
 };
-
+/**
+ * @brief Construct a new test f object
+ * 
+ */
 TEST_F(TaskPlanningFixture, TrueIsTrueTest) {
   std::cout << "TEST BEGINNING!!" << std::endl;
   EXPECT_TRUE(true);

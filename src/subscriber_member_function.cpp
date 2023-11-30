@@ -27,6 +27,11 @@ class MinimalSubscriber : public rclcpp::Node {
   }
 
  private:
+ /**
+  * @brief callback function to get the mesaage from the topic
+  * 
+  * @param msg 
+  */
   void topic_callback(const std_msgs::msg::String& msg) const {
     RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
   }
