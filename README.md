@@ -52,8 +52,8 @@ ros2 run tf2_ros tf2_echo world talk # Pings the publisher to get tf frame messa
 # For rosbagging kill the talker node in Terminal#1
 ros2 launch cpp_pubsub rosbag_launch.py freq:=1.0 record_rosbag:=True #Note if record_rosbag is False then no rosbag will be recording
 # Once done recording to view the bag info or play the rosbag
-ros2 bag play rosbag2_2023_11_29-22_08_48 #For playing the rosbag
-ros2 bag info rosbag2_2023_11_29-22_08_48 #For info of the bag file
+ros2 bag play outputs/rosbag2_2023_11_29-22_08_48_0.db3 #For playing the rosbag
+ros2 bag info outputs/rosbag2_2023_11_29-22_08_48_0.db3 #For info of the bag file
 # While playing the bag file in terminal#2 run the listener node
 ros2 run cpp_pubsub listener
 # For running the ros test
